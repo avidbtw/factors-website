@@ -52,7 +52,7 @@ GENERAL TYPOGRAPHY
 .thickdivider {
   width: 50px;
   height: 5px;
-  background-color: #404040;
+  background-color: pink;
   margin-top: 0;
   margin-bottom: 20px;
 }
@@ -168,9 +168,9 @@ FEATURE SECTION
 LARGE TEXTBOX SECTION
 ******************************************************/
 .large_textbox {
-  height: 100vh;
+  height: 80vh;
   background-color: white;
-  padding: 25px;
+  padding: 15px;
 }
 .large_text {
   font-size: 1.5em;
@@ -314,10 +314,9 @@ SPLIT IN TWO SECTION
   font-size: 1.5em;
   position: absolute;
   top: 40%;
+  left: 15px;
   line-height: 1.8;
   color: #f1e9df;
-  text-align: center;
-  align-items: center;
 }
 .halfcolumn_text mark {
   background-color: #f1e9df;
@@ -436,16 +435,18 @@ HEADING + PARAGRAPH SECTION
 .smalltextbox {
   width: 80%;
   max-width: 1200px;
+  margin-left: 40px;
 }
 .text_section h1 {
   font-size: 3em;
   margin-bottom: 20px;
+  color: pink;
 }
 .text_section h2 {
   font-size: 2em;
   margin-top: 40px;
   margin-bottom: 20px;
-  color: #404040;
+  color: pink;
 }
 .text_section p {
   font-size: 1.2em;
@@ -644,4 +645,8 @@ a {
 .app {
   width: 100%;
   height: 100%;
+}
+
+H2 {
+  color: #404040;
 }
