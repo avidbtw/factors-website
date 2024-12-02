@@ -13,7 +13,7 @@ MARGIN PADDING RESET
 HIGHLIGHTS
 ******************************************************/
 ::selection {
-  background: lime; /* WebKit/Blink Browsers */
+  background: pink; /* WebKit/Blink Browsers */
 }
 mark {
   background: rgb(239, 132, 251);
@@ -52,14 +52,14 @@ GENERAL TYPOGRAPHY
 .thickdivider {
   width: 50px;
   height: 5px;
-  background-color: black;
+  background-color: #404040;
   margin-top: 0;
   margin-bottom: 20px;
 }
 .thindivider {
   width: 50px;
   height: 2px;
-  background-color: black;
+  background-color: #404040;
   margin-top: 60px;
   margin-bottom: 40px;
 }
@@ -79,13 +79,13 @@ LINE SPACING (LEADING)
 FIXED LOGO BUTTON (TOP LEFT)
 ******************************************************/
 #fixed_button {
-  width: 50px;
-  height: 50px;
-  background-color: lime;
+  width: 75px;
+  height: 75px;
+
   border-radius: 50px;
   position: fixed;
-  left: 25px;
-  top: 12px;
+  left: 10px;
+  top: 0;
   background-image: url(../_assets/_images/cross.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -96,7 +96,6 @@ FIXED LOGO BUTTON (TOP LEFT)
   transition: all 0.5s ease;
 }
 #fixed_button:hover {
-  background-color: blue;
   background-image: url(../_assets/_images/cross_rover.svg);
 }
 
@@ -123,7 +122,7 @@ header a {
   text-decoration: none;
 }
 header a:hover {
-  color: lime;
+  color: yellow;
 }
 .googlemark {
   text-align: center;
@@ -140,7 +139,6 @@ nav {
 }
 .navbutton {
   width: 33.333%;
-  text-align: center;
 }
 .navbutton a {
   color: white;
@@ -149,7 +147,7 @@ nav {
   letter-spacing: 0.05em;
 }
 .navbutton a:hover {
-  color: lime;
+  color: white;
 }
 .designedby {
   text-align: right;
@@ -175,9 +173,10 @@ LARGE TEXTBOX SECTION
   padding: 25px;
 }
 .large_text {
-  font-size: 3em;
+  font-size: 1.5em;
   padding-right: 30px;
   position: relative;
+  color: #404040;
 }
 .largetext_wrap {
   width: 95%;
@@ -190,31 +189,68 @@ LARGE TEXTBOX SECTION
 /*****************************************************
 ICONS
 ******************************************************/
+
 .icons_section {
+  width: 95%;
+  margin: 20px auto; /* Add margin-top for space from the top */
   height: 80vh;
-  background-color: #f8e6ce;
+  border-radius: 10px; /* Example: Rounded corners */
+  border: 10px solid #f1e9df; /* Ensure border has width and style */
+  padding: 20px; /* Add padding for better appearance */
+  background-color: #88b9e9; /* Example: Background color */
   font-family: "Baloo Bhai 2", serif;
   font-weight: 600;
   font-style: normal;
-  color: #F1E9DF(24, 23, 23);
+  color: rgb(24, 23, 23);
   position: relative;
 
   display: flex;
   align-items: center;
+  text-align: center;
 }
 .icons_container {
-  margin: 0 auto;
+  margin: -50px auto;
   width: 80%;
   max-width: 1200px;
 
   /* FLEX */
   display: flex;
   justify-content: space-between;
+  text-wrap: wrap;
 }
-.icon_box p {
+/* .icon_box p {
   width: 200px;
   margin-top: 30px;
   text-align: center;
+  color: #404040;
+} */
+.icon-text p {
+  width: 80%; /* Adjust width as needed */
+  margin-top: 30px;
+  text-align: center;
+  color: #404040;
+  display: inline-block; /* Ensure the border wraps around the text only */
+
+  padding-top: -35px; /* Add some padding for better appearance */
+
+  border-radius: 50px; /* Make the corners rounded */
+  padding-bottom: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-weight: 400;
+}
+
+.icon-text h1 {
+  width: 25%; /* Adjust width as needed */
+  margin-top: 30px;
+  text-align: center;
+  color: #404040;
+  display: inline-block; /* Ensure the border wraps around the text only */
+
+  padding: 15px; /* Add some padding for better appearance */
+
+  border-radius: 50px; /* Make the corners rounded */
+  font-size: 1.8em;
 }
 .icon {
   width: 200px;
@@ -246,7 +282,7 @@ VIDEO
 video {
   width: 720px;
   /* Add border */
-  border: black 20px solid;
+  border: #404040 20px solid;
 }
 /*****************************************************
 SPLIT IN TWO SECTION
@@ -258,7 +294,7 @@ SPLIT IN TWO SECTION
   background-color: lime;
 }
 .splitintwo ::selection {
-  background: black;
+  background: #404040;
   color: white;
 }
 .halfcolumn_left,
@@ -274,14 +310,14 @@ SPLIT IN TWO SECTION
   background-position: 50% 50%;
 }
 .halfcolumn_text {
-  width: 80%;
+  width: 100%;
   font-size: 1.5em;
   position: absolute;
-  top: 50%;
-  left: 40px;
-  transform: translate(0, -50%);
+  top: 40%;
   line-height: 1.8;
   color: #f1e9df;
+  text-align: center;
+  align-items: center;
 }
 .halfcolumn_text mark {
   background-color: #f1e9df;
@@ -291,10 +327,10 @@ GALLERY
 ******************************************************/
 .gallery_grid {
   display: flex;
-  background-color: black;
+  background-color: #404040;
   /* BORDERS */
-  border-top: 20px solid black;
-  border-bottom: 20px solid black;
+  border-top: 20px solid #404040;
+  border-bottom: 20px solid #404040;
 }
 .grid_largebox {
   display: flex;
@@ -409,15 +445,18 @@ HEADING + PARAGRAPH SECTION
   font-size: 2em;
   margin-top: 40px;
   margin-bottom: 20px;
+  color: #404040;
 }
 .text_section p {
   font-size: 1.2em;
   margin-bottom: 20px;
+  color: #404040;
 }
 .text_section h4 {
   width: 40%;
   margin-top: 40px;
   margin-bottom: 20px;
+  color: #404040;
 }
 /*****************************************************
 TEXT&IMAGE SECTION
@@ -425,7 +464,7 @@ TEXT&IMAGE SECTION
 .textimage_section {
   font-family: "Baloo Bhai 2", serif;
   padding: 200px 0 200px 0;
-  background-color: black;
+  background-color: #404040;
 }
 .textimage_section .textbox {
   width: 80%;
@@ -456,9 +495,26 @@ TEXT&IMAGE SECTION
 CTA SECTION
 ******************************************************/
 .cta_section {
-  font-family: "Baloo Bhai 2", serif;
-  padding: 100px 0;
-  background-color: white;
+  display: flex;
+  align-items: center; /* Align items vertically centered */
+  justify-content: space-between; /* Add space between text and image */
+  padding: 40px; /* Add padding for better appearance */
+  background-color: #f3d6ed;
+}
+
+.textbox {
+  flex: 1; /* Allow the text box to take up available space */
+  margin-right: 20px; /* Add space between text and image */
+}
+
+.image-container {
+  flex: 1; /* Allow the image container to take up available space */
+  text-align: center; /* Center the image horizontally */
+}
+
+.image-container img {
+  max-width: 100%; /* Ensure the image does not overflow */
+  height: auto; /* Maintain aspect ratio */
 }
 .cta_section .textbox {
   width: 80%;
@@ -475,7 +531,7 @@ CTA SECTION
   width: 60%;
 }
 .cta_section h1 {
-  color: black;
+  color: #404040;
   font-size: 42px;
   letter-spacing: 0.05em;
   margin-bottom: 20px;
@@ -484,7 +540,7 @@ CTA SECTION
 .cta_section .cta_button {
   width: 200px;
   height: 50px;
-  background-color: lime;
+  background-color: #88b9e9;
   border-radius: 25px;
   margin-top: 40px;
   background-image: url(../_assets/_images/cta_button.png);
@@ -493,13 +549,13 @@ CTA SECTION
   transition: all 0.4s ease;
 }
 .cta_section .cta_button:hover {
-  background-color: black;
+  background-color: palevioletred;
 }
 /*****************************************************
 FOOTER
 ******************************************************/
 .footer_section {
-  background-color: black;
+  background-color: #88b9e9;
   font-family: "Baloo Bhai 2", sans-serif;
   background-image: url(../_assets/_images/cross_rover.svg);
   background-repeat: no-repeat;
@@ -530,7 +586,7 @@ FOOTER
   transition: all 0.4s ease;
 }
 .footer_section .textbox a:hover {
-  color: lime;
+  color: pink;
 }
 
 #logo {
@@ -566,16 +622,26 @@ FOOTER
   font-style: italic;
 }
 
-.icons_section {
-  margin-top: 20px;
+.cta_button h2 {
+  font-size: 1.5em;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
-.icons_container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+a {
+  color: white;
+  text-decoration: none;
 }
 
-.icon_box {
-  margin: 10px;
+.app {
+  width: 100%;
+  height: 100%;
 }
