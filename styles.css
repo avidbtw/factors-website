@@ -650,3 +650,35 @@ a {
 H2 {
   color: #404040;
 }
+
+.research-button {
+  width: 200px;
+  height: 50px;
+  background-color: pink;
+  border-radius: 25px;
+  background-image: url(../_assets/_images/cta_button.png);
+
+  /* Animated Feedback */
+  transition: all 0.4s ease;
+  text-align: center;
+  padding-left: 35px;
+  padding-top: 5px;
+  transform: translate(300%, -5px);
+}
+
+.research-button h2 {
+  color: white;
+  font-size: 25px;
+  letter-spacing: 0.05em;
+  margin-bottom: 20px;
+  width: 60%;
+}
+.research-button:hover {
+  background-color: palevioletred;
+}
+
+.nav-design {
+  width: 100vw;
+  height: 20vh;
+  color: white;
+}
