@@ -465,7 +465,7 @@ TEXT&IMAGE SECTION
 .textimage_section {
   font-family: "Baloo Bhai 2", serif;
   padding: 200px 0 200px 0;
-  background-color: #404040;
+  background-color: #f1e9df;
 }
 .textimage_section .textbox {
   width: 80%;
@@ -479,18 +479,18 @@ TEXT&IMAGE SECTION
 }
 .textimage_section h2 {
   text-transform: uppercase;
-  color: red;
-  font-size: 0.8em;
+  color: pink;
+  font-size: 1.5em;
   font-style: normal;
   letter-spacing: 0.3em;
-  width: 60%;
+  width: 80%;
   margin-bottom: 10px;
 }
 .textimage_section p {
-  color: white;
-  margin-bottom: 0.8em;
+  color: #404040;
+  margin-bottom: 1.2em;
   letter-spacing: 0.02em;
-  width: 55%;
+  width: 89%;
 }
 /*****************************************************
 CTA SECTION
@@ -564,9 +564,9 @@ FOOTER
   background-position: 98% 88%;
 }
 .footer_section .textbox {
-  width: 80%;
-  max-width: 1200px;
-  min-width: 800px;
+  width: 50%;
+  max-width: 400px;
+  min-width: 1000px;
   padding: 100px 0 50px 20px;
 }
 .footer_section .textbox .copyright {
@@ -663,7 +663,10 @@ H2 {
   text-align: center;
   padding-left: 35px;
   padding-top: 5px;
-  transform: translate(300%, -5px);
+  position: fixed; /* Position absolutely */
+  right: 0; /* Align to the right */
+  margin-right: 10px;
+  margin-top: -10px;
 }
 
 .research-button h2 {
@@ -673,6 +676,7 @@ H2 {
   margin-bottom: 20px;
   width: 60%;
 }
+
 .research-button:hover {
   background-color: palevioletred;
 }
@@ -681,4 +685,6 @@ H2 {
   width: 100vw;
   height: 20vh;
   color: white;
+  border: 2px solid black; /* Add border to nav */
+  position: relative; /* Ensure nav container positions its children correctly */
 }
